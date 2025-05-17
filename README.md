@@ -11,8 +11,7 @@ Tingginya tingkat attrition menyebabkan perusahaan harus mengeluarkan biaya tamb
 1. Bagaimana perusahaan dapat mengidentifikasi karyawan yang berisiko tinggi untuk resign sebelum mereka mengajukan pengunduran diri?
 2. Faktor-faktor apa yang paling berpengaruh terhadap keputusan karyawan untuk resign?
 3. Bagaimana perusahaan dapat mengembangkan strategi retensi karyawan yang lebih efektif berdasarkan data?
-4. Bagaimana cara menurunkan tingkat attrition khususnya pada departemen Sales yang memiliki tingkat attrition tertinggi (20.7%)?
-5. Bagaimana cara memantau dan mengukur keberhasilan program retensi karyawan secara berkelanjutan?
+4. Bagaimana cara memantau dan mengukur keberhasilan program retensi karyawan secara berkelanjutan?
 
 ### 📋 Cakupan Proyek
 
@@ -42,6 +41,24 @@ imbalanced-learn==0.11.0
 python-dotenv==1.0.0
 psycopg2-binary==2.9.7
 Pillow==9.5.0
+```
+## 📁 Struktur Repository
+
+Berikut adalah struktur dan penjelasan setiap komponen dalam repository:
+
+```
+hrd-attrition-prediction/
+│
+├── 📓 notebook.ipynb          # Notebook utama berisi analisis data dan pembuatan model
+├── 🖥️ prediction.py           # Aplikasi Streamlit untuk prediksi attrition
+├── 📝 README.md               # Dokumentasi proyek
+├── 📋 requirements.txt        # Daftar package Python yang dibutuhkan
+├── 🗃️ metabase.db.mv.db       # File database Metabase untuk dashboard
+│
+└── 📂 model/                  # Direktori untuk menyimpan model dan encoder
+    ├── 🤖 model.joblib        # Model machine learning terlatih (ExtraTrees)
+    ├── 🏷️ label_encoders.joblib # Encoder untuk data kategorikal
+    └── ⚖️ scaler.joblib       # Scaler untuk normalisasi data numerik
 ```
 
 ## 📊 Business Dashboard
@@ -167,36 +184,17 @@ Evaluasi model dilakukan dengan fokus pada:
 
 Dari empat kombinasi model yang diuji (dua algoritma × dua skema data), model terbaik adalah **🏆 ExtraTreesClassifier dengan skema tanpa SMOTE** yang mencapai **F1-score 0.59** untuk kelas minoritas dan **Akurasi 0.849**, menghasilkan performa optimal dalam mengidentifikasi karyawan berisiko tinggi untuk resign.
 
-## 📁 Struktur Repository
-
-Berikut adalah struktur dan penjelasan setiap komponen dalam repository:
-
-```
-hrd-attrition-prediction/
-│
-├── 📓 notebook.ipynb          # Notebook utama berisi analisis data dan pembuatan model
-├── 🖥️ prediction.py           # Aplikasi Streamlit untuk prediksi attrition
-├── 📝 README.md               # Dokumentasi proyek
-├── 📋 requirements.txt        # Daftar package Python yang dibutuhkan
-├── 🗃️ metabase.db.mv.db       # File database Metabase untuk dashboard
-│
-└── 📂 model/                  # Direktori untuk menyimpan model dan encoder
-    ├── 🤖 model.joblib        # Model machine learning terlatih (ExtraTrees)
-    ├── 🏷️ label_encoders.joblib # Encoder untuk data kategorikal
-    └── ⚖️ scaler.joblib       # Scaler untuk normalisasi data numerik
-```
-
-## 🚀 Menjalankan Aplikasi Prediksi
+### 🚀 Menjalankan Aplikasi Prediksi
 
 Aplikasi prediksi attrition karyawan dibuat menggunakan Streamlit yang menyediakan interface interaktif untuk memasukkan data karyawan dan mendapatkan prediksi beserta rekomendasi tindakan.
 
-### 📋 Prasyarat
+#### 📋 Prasyarat
 
 1. 🐍 Python 3.8 atau lebih baru
 2. 📦 Semua package yang tercantum di `requirements.txt`
 3. 📂 File model dan encoder di direktori `model/`
 
-### 📝 Langkah-langkah Menjalankan Aplikasi
+#### 📝 Langkah-langkah Menjalankan Aplikasi
 
 1. **📥 Install Dependencies**
 
@@ -214,7 +212,7 @@ Aplikasi prediksi attrition karyawan dibuat menggunakan Streamlit yang menyediak
    
    Setelah menjalankan perintah di atas, browser akan otomatis terbuka dengan aplikasi prediksi. Jika tidak, akses aplikasi melalui URL yang ditampilkan di terminal (biasanya http://localhost:8501).
 
-### ✨ Fitur Aplikasi Prediksi
+#### ✨ Fitur Aplikasi Prediksi
 
 1. **📝 Form Input Data Karyawan**:
    - 👤 Data demografis (usia, gender, status pernikahan, dll)
@@ -236,7 +234,7 @@ Aplikasi prediksi attrition karyawan dibuat menggunakan Streamlit yang menyediak
    - 📊 Visualisasi fitur-fitur yang paling berpengaruh
    - ⚠️ Peringatan untuk faktor risiko tinggi spesifik
 
-### 🖼️ Tautan Aplikasi Publik
+#### 🖼️ Tautan Aplikasi Publik
 Anda dapat mengakses prediksi di sini:
 
 ## 📝 Conclusion
