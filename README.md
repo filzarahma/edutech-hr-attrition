@@ -235,7 +235,7 @@ Aplikasi prediksi attrition karyawan dibuat menggunakan Streamlit yang menyediak
    - ⚠️ Peringatan untuk faktor risiko tinggi spesifik
 
 #### 🖼️ Tautan Aplikasi Publik
-Anda dapat mengakses prediksi di sini:
+Anda dapat mengakses prediksi di sini: https://edutech-attrition-prediction.streamlit.app
 
 ## 📝 Conclusion
 
