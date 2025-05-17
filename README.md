@@ -49,7 +49,7 @@ Pillow==9.5.0
 Untuk memvisualisasikan dan memonitor data karyawan serta tren attrition, dibangun dashboard interaktif menggunakan Metabase yang terhubung ke database Supabase. Dashboard terdiri dari dua halaman utama yang memberikan insight komprehensif:
 
 ### 1. Dashboard HR & Informasi Pekerjaan
-[image](https://github.com/filzarahma/edutech-hr-attrition/blob/main/filzrahma-dashboard/Edutech%20HR%20Dashboard_page-0001.jpg)
+![image](https://github.com/filzarahma/edutech-hr-attrition/blob/main/filzrahma-dashboard/Edutech%20HR%20Dashboard_page-0001.jpg)
 Dashboard ini menampilkan:
 - Overview attrition dengan total 179 karyawan resign dari 879 karyawan (16.92%)
 - Distribusi attrition berdasarkan departemen (HR, R&D, Sales)
@@ -65,7 +65,7 @@ Key insights dari dashboard ini:
 - Karyawan yang sering lembur (overtime) memiliki tingkat attrition lebih tinggi (31%)
 
 ### 2. Dashboard Demografi
-[image](https://github.com/filzarahma/edutech-hr-attrition/blob/main/filzrahma-dashboard/Edutech%20HR%20Dashboard_page-0002.jpg)
+![image](https://github.com/filzarahma/edutech-hr-attrition/blob/main/filzrahma-dashboard/Edutech%20HR%20Dashboard_page-0002.jpg)
 Dashboard ini menampilkan:
 - Distribusi karyawan berdasarkan tingkat pendidikan dan attrition
 - Komposisi gender (pria dan wanita) beserta tingkat retensi masing-masing
