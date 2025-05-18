@@ -62,8 +62,7 @@ Attrition tinggi mengakibatkan:
 * **Sumber data**: 1470 karyawan, 35 variabel (demografi, pekerjaan, kompensasi, dll).
 * **Target variabel**: `Attrition` (0=tidak resign, 1=resign)
 * **Missing value**: 412 pada kolom `Attrition`
-* **Penjelasan fitur**:
-  (Lihat pada deskripsi lengkap di atas atau [link dokumentasi data](#) jika ada)
+* **Penjelasan fitur**: Lihat pada dokumentasi [berikut](https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/README.md).
 
 ---
 
