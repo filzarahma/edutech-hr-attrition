@@ -5,14 +5,14 @@
 ## 📑 Daftar Isi
 
 1. [Business Understanding](#business-understanding)
-       • Permasalahan Bisnis
-       • Cakupan Proyek
+       * Permasalahan Bisnis
+       * Cakupan Proyek
 2. [Struktur Repository](#struktur-repository)
 3. [Persiapan Data](#persiapan-data)
 4. [Business Dashboard](#business-dashboard)
-       • Dashboard HR & Informasi Pekerjaan
-       • Dashboard Demografi
-       • Cara Menjalankan Dashboard Metabase
+       * Dashboard HR & Informasi Pekerjaan
+       * Dashboard Demografi
+       * Cara Menjalankan Dashboard Metabase
 5. [Machine Learning & Metodologi](#machine-learning--metodologi)
 6. [Kesimpulan & Rekomendasi](#kesimpulan--rekomendasi)
 
