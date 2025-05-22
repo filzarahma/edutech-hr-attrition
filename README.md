@@ -129,14 +129,6 @@ hrd-attrition-prediction/
 
 ### c. Cara Menjalankan Dashboard Metabase
 
-#### Prasyarat
-
-* Minimal RAM 1GB
-* File database `metabase.db.mv.db`
-* [Docker](https://www.docker.com/products/docker-desktop/)
-
-#### **Langkah-langkah:**
-
 1. **Install Docker**
 
    * Unduh dan install Docker Desktop dari [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/).
