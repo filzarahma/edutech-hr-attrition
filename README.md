@@ -135,26 +135,52 @@ hrd-attrition-prediction/
 * File database `metabase.db.mv.db`
 * [Docker](https://www.docker.com/products/docker-desktop/)
 
-#### Langkah Menjalankan
+#### **Langkah-langkah:**
 
-1. Install Docker
-2. Siapkan direktori & salin file database ke lokal
+1. **Install Docker**
 
-   ```bash
-   mkdir C:\metabase-data
-   copy "path\to\metabase.db.mv.db" C:\metabase-data\
-   ```
-3. Jalankan Metabase via Docker
+   * Unduh dan install Docker Desktop dari [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/).
 
-   ```bash
-   docker run -d -p 3000:3000 --name attrition -v "$(pwd)/metabase.db.mv.db:/metabase.db/metabase.db.mv.db" metabase/metabase
-   ```
-4. Buka [http://localhost:3000](http://localhost:3000)
-   **Login:**
+2. **Siapkan Direktori dan Unduh File Database**
 
-   * Email: `filzarahmamuflihah@gmail.com`
-   * Password: `SXj3m7MMKnCZzFP`
-5. Klik menu "Dashboard" untuk melihat visualisasi.
+   * Buat folder khusus, misal `metabase-data`, lalu pindahkan file `metabase.db.mv.db` ke folder tersebut.
+
+3. **Buka Command Prompt/Terminal**
+
+   * Arahkan ke folder tempat file database berada (`metabase-data`).
+   * Contoh perintah:
+
+     ```bash
+     cd path/to/metabase-data
+     ```
+
+4. **Jalankan Metabase dengan Docker**
+
+   * Gunakan perintah berikut (otomatis kompatibel untuk Linux/Mac.
+     Untuk Windows PowerShell, pastikan format path benar, atau gunakan `//c/metabase-data`):
+
+     ```bash
+     docker run -d -p 3000:3000 --name attrition \
+       -v "$(pwd)/metabase.db.mv.db:/metabase.db/metabase.db.mv.db" \
+       -e "MB_DB_FILE=/metabase.db/metabase.db.mv.db" \
+       metabase/metabase
+     ```
+
+     > **Catatan:**
+     >
+     > * Jika di Windows CMD, ganti `$(pwd)` dengan path lengkap, misal:
+     >   `-v "C:\metabase-data\metabase.db.mv.db:/metabase.db/metabase.db.mv.db"`
+     > * Untuk PowerShell, bisa pakai:
+     >   `-v "${PWD}\metabase.db.mv.db:/metabase.db/metabase.db.mv.db"`
+
+5. **Akses Dashboard**
+
+   * Buka browser ke [http://localhost:3000](http://localhost:3000)
+   * **Login:**
+
+     * Email: `filzarahmamuflihah@gmail.com`
+     * Password: `SXj3m7MMKnCZzFP`
+   * Pilih menu **Our Analytics** > **Dashboards** > **Edutech HR Dashboard** untuk melihat visualisasi.
 
 ---
 
