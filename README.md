@@ -14,11 +14,11 @@
 4. [Persiapan Data](#persiapan-data)
 5. [Business Dashboard](#business-dashboard)
    
-    * Dashboard HR & Informasi Pekerjaan
+    * [Dashboard HR & Informasi Pekerjaan](#dashboard-hr-&-informasi-pekerjaan)
       
-    * Dashboard Demografi
+    * [Dashboard Demografi](#dashboard-demografi)
       
-    * Cara Menjalankan Dashboard Metabase
+    * [Cara Menjalankan Dashboard Metabase](#cara-menjalankan-dashboard-metabase)
       
 7. [Machine Learning & Metodologi](#machine-learning--metodologi)
 8. [Kesimpulan & Rekomendasi](#kesimpulan--rekomendasi)
