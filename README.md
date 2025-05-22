@@ -147,13 +147,13 @@ hrd-attrition-prediction/
 3. Jalankan Metabase via Docker
 
    ```bash
-   docker run -d -p 3000:3000 --name metabase -v C:/metabase-data:/metabase-data -e "MB_DB_FILE=/metabase-data/metabase.db.mv.db" metabase/metabase
+   docker run -d -p 3000:3000 --name attrition -v "$(pwd)/metabase.db.mv.db:/metabase.db/metabase.db.mv.db" metabase/metabase
    ```
 4. Buka [http://localhost:3000](http://localhost:3000)
    **Login:**
 
-   * Email: `admin@metabase.local`
-   * Password: `metabase123`
+   * Email: `filzarahmamuflihah@gmail.com`
+   * Password: `SXj3m7MMKnCZzFP`
 5. Klik menu "Dashboard" untuk melihat visualisasi.
 
 ---
