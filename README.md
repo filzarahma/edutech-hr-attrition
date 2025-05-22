@@ -6,9 +6,9 @@
 
 1. [Business Understanding](#business-understanding)
 
-   * Permasalahan Bisnis
+   * [Permasalahan Bisnis](#permasalahan-bisnis)
      
-   * Cakupan Proyek
+   * [Cakupan Proyek](#cakupan-proyek)
      
 3. [Struktur Repository](#struktur-repository)
 4. [Persiapan Data](#persiapan-data)
