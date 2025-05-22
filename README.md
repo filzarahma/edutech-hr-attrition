@@ -29,18 +29,9 @@
 
 Perusahaan Edutech adalah perusahaan teknologi pendidikan yang berkembang dengan fokus pada Research & Development (R\&D), Sales, dan Human Resources. Saat ini, perusahaan menghadapi tantangan besar dalam mempertahankan talenta terbaiknya, khususnya karena tingginya tingkat **attrition** (pengunduran diri karyawan), terutama di departemen Sales serta pada posisi Sales Representative dan Laboratory Technician.
 
-Attrition tinggi mengakibatkan:
-
-* **Biaya tambahan** untuk rekrutmen, pelatihan, dan onboarding karyawan baru
-* **Penurunan produktivitas tim** dan kepuasan pelanggan
-* **Dampak negatif pada pendapatan** perusahaan
-
 ### ❓ Permasalahan Bisnis
 
-1. Bagaimana mengidentifikasi karyawan dengan risiko resign tinggi sebelum terjadi pengunduran diri?
-2. Faktor apa saja yang paling berpengaruh pada keputusan resign?
-3. Bagaimana membangun strategi retensi berbasis data yang efektif?
-4. Bagaimana cara memonitor dan mengukur keberhasilan program retensi secara berkelanjutan?
+Data internal menunjukkan **tingkat attrition mencapai 16,92%**, jauh di atas standar industri yang ideal (5–10%). Hal ini membuat perusahaan perlu memahami faktor-faktor penyebab dan mengembangkan strategi prediktif dan preventif yang berbasis data.
 
 ### 📋 Cakupan Proyek
 
@@ -54,15 +45,6 @@ Attrition tinggi mengakibatkan:
    Dashboard interaktif di Metabase.
 5. **Rekomendasi Strategi Retensi**
    Rekomendasi berbasis data untuk mengurangi attrition.
-
----
-
-## ⚙️ Persiapan Data
-
-* **Sumber data**: 1470 karyawan, 35 variabel (demografi, pekerjaan, kompensasi, dll).
-* **Target variabel**: `Attrition` (0=tidak resign, 1=resign)
-* **Missing value**: 412 pada kolom `Attrition`
-* **Penjelasan fitur**: Lihat pada dokumentasi [berikut](https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/README.md).
 
 ---
 
@@ -81,6 +63,13 @@ hrd-attrition-prediction/
     ├── label_encoders.joblib  # Encoder data kategorikal
     └── scaler.joblib          # Scaler untuk normalisasi numerik
 ```
+---
+## ⚙️ Persiapan Data
+
+* **Sumber data**: Dataset [karyawan](https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv) yang digunakan berasal dari Dicoding, terdiri dari 1.470 data karyawan dengan 35 variabel penting, seperti data demografi, riwayat pekerjaan, dan tingkat kepuasan kerja. Target utama pada dataset adalah kolom Attrition (0 = tidak resign, 1 = resign).
+* **Penjelasan fitur**: Lihat pada dokumentasi [berikut](https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/README.md).
+* **Setup environment**:
+
 
 ---
 
