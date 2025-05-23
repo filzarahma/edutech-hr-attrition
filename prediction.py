@@ -27,22 +27,6 @@ def load_resources():
         st.error(f"❌ Error: Model files not found. {e}")
         return None, None, None
 
-def create_feature_importance_chart(model, feature_names):
-    """Create a feature importance chart"""
-    importances = model.feature_importances_
-    feat_importances = pd.Series(importances, index=feature_names)
-    sorted_feat_importances = feat_importances.sort_values(ascending=False)
-    
-    fig, ax = plt.subplots(figsize=(10, 6))
-    sorted_feat_importances.head(10).plot(kind='barh', ax=ax)
-    plt.title("🔝 10 Fitur Terpenting", fontsize=14)
-    plt.xlabel("Nilai Kepentingan Fitur")
-    plt.ylabel("Fitur")
-    plt.gca().invert_yaxis()  # Untuk menampilkan fitur dengan kepentingan tertinggi di atas
-    plt.tight_layout()
-    
-    return fig
-
 def main():
     st.set_page_config(
         page_title="Prediksi Attrition Karyawan",
@@ -70,7 +54,7 @@ def main():
         st.write("""
         Aplikasi ini menggunakan model machine learning untuk memprediksi kemungkinan karyawan akan resign (attrition) berdasarkan berbagai faktor.
         
-        🤖 Model dilatih menggunakan ensemble learning dengan algoritma tree-based yang menghasilkan tingkat akurasi tinggi dalam mengidentifikasi faktor-faktor yang mempengaruhi keputusan karyawan untuk resign.
+        🤖 Model dilatih menggunakan ensemble learning dengan algoritma tree-based yang menghasilkan akurasi 85% dalam mengidentifikasi faktor-faktor yang mempengaruhi keputusan karyawan untuk resign.
         
         💡 Gunakan aplikasi ini sebagai alat pendukung keputusan untuk mengembangkan strategi retensi karyawan yang lebih efektif.
         """)
