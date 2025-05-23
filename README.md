@@ -94,6 +94,8 @@ hrd-attrition-prediction/
 
   Akses aplikasi di browser:
   `http://localhost:8501` atau lihat [Demo Online](https://edutech-attrition-prediction.streamlit.app)
+  
+  ![image](https://github.com/user-attachments/assets/a98daf35-3afa-44f9-bf5e-c5a0628ebc1d)
 
 ---
 
