@@ -75,14 +75,6 @@ def main():
         💡 Gunakan aplikasi ini sebagai alat pendukung keputusan untuk mengembangkan strategi retensi karyawan yang lebih efektif.
         """)
         
-        # Display feature importance chart
-        st.subheader("📊 Faktor-faktor yang Mempengaruhi Attrition")
-        feature_names = [col for col in encoders.keys()] + ['OverTime', 'Age', 'MaritalStatus', 'TotalWorkingYears',
-                                                            'JobInvolvement', 'EnvironmentSatisfaction', 'StockOptionLevel',
-                                                            'MonthlyIncome', 'WorkLifeBalance', 'JobLevel']
-        
-        fig = create_feature_importance_chart(model, feature_names)
-        st.pyplot(fig)
     
     # Create form for input
     st.header("👤 Data Karyawan")
