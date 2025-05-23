@@ -45,8 +45,8 @@ def main():
     
     st.sidebar.header("📋 Panduan Penggunaan")
     st.sidebar.info("""
-    1️⃣ Masukkan data karyawan pada form
-    2️⃣ Klik tombol 'Prediksi' untuk melihat hasil
+    1️⃣ Masukkan data karyawan pada form\n
+    2️⃣ Klik tombol 'Prediksi' untuk melihat hasil\n
     3️⃣ Hasil akan menampilkan probabilitas resign dan rekomendasi
     """)
     
