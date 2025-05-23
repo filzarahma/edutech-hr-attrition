@@ -61,8 +61,8 @@ def main():
     
     st.sidebar.header("📋 Panduan Penggunaan")
     st.sidebar.info("""
-    1️⃣ Masukkan data karyawan pada form\n
-    2️⃣ Klik tombol 'Prediksi' untuk melihat hasil\n
+    1️⃣ Masukkan data karyawan pada form
+    2️⃣ Klik tombol 'Prediksi' untuk melihat hasil
     3️⃣ Hasil akan menampilkan probabilitas resign dan rekomendasi
     """)
     
@@ -77,15 +77,9 @@ def main():
         
         # Display feature importance chart
         st.subheader("📊 Faktor-faktor yang Mempengaruhi Attrition")
-        feature_names = [col for col in encoders.keys()] + ['Age', 'DailyRate', 'DistanceFromHome', 'HourlyRate', 
-                                               'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked', 
-                                               'PercentSalaryHike', 'TotalWorkingYears', 'TrainingTimesLastYear',
-                                               'YearsAtCompany', 'YearsInCurrentRole', 
-                                               'YearsSinceLastPromotion', 'YearsWithCurrManager',
-                                               'Education', 'JobInvolvement', 'JobLevel',
-                                               'JobSatisfaction', 'PerformanceRating', 'RelationshipSatisfaction',
-                                               'StockOptionLevel', 'WorkLifeBalance', 'EnvironmentSatisfaction',
-                                               'PotentialMonthlySalary']
+        feature_names = [col for col in encoders.keys()] + ['OverTime', 'Age', 'MaritalStatus', 'TotalWorkingYears',
+                                                            'JobInvolvement', 'EnvironmentSatisfaction', 'StockOptionLevel',
+                                                            'MonthlyIncome', 'WorkLifeBalance', 'JobLevel']
         
         fig = create_feature_importance_chart(model, feature_names)
         st.pyplot(fig)
