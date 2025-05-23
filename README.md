@@ -209,12 +209,9 @@ hrd-attrition-prediction/
 **Model Terbaik:**
 ExtraTreesClassifier tanpa SMOTE (F1-score: 0.59, Akurasi: 0.849)
 
-### e. Fitur Aplikasi
+**Hasil Analisis Feature Importance**
+![image](https://github.com/user-attachments/assets/ad0d552b-9c5d-4f5d-9148-69dd71989362)
 
-* Form input data karyawan
-* Hasil prediksi (probabilitas, status, visual gauge chart)
-* Rekomendasi tindakan & insight faktor risiko
-* Visualisasi fitur paling berpengaruh
 
 ---
 
