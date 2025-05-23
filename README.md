@@ -111,9 +111,10 @@ hrd-attrition-prediction/
   * Berdasarkan departemen, job role, job level, stock option, income band, dan overtime.
 * **Key Insight:**
 
-  * Attrition tertinggi: Sales department & Sales Rep
-  * Entry level & stock option = 0 → risiko resign tinggi
-  * Overtime = risiko resign lebih tinggi (31%)
+  * Attrition tertinggi terjadi pada Sales Department dan Role Sales Representative.
+  * Entry level dan Junior adalah dua level terendah dalam perusahaan yang menyumbang lebih dari 80% kasus attrition.
+  * Karyawan dengan stock option level 0 memiliki risiko resign tinggi dibandingkan level lainnya.
+  * Karyawan yang lembur (overtime) memiliki risiko resign 3 kali lipat dibandingkan karyawan yang tidak lembur.
 
 ![Dashboard HR](https://github.com/filzarahma/edutech-hr-attrition/blob/main/filzrahma-dashboard/Edutech%20HR%20Dashboard_page-0001.jpg)
 
@@ -123,9 +124,11 @@ hrd-attrition-prediction/
   Pendidikan, gender, status pernikahan, total tahun kerja, survey score, usia
 * **Key Insight:**
 
-  * Pria = attrition lebih tinggi (17.4%)
-  * Sarjana terbanyak, masa kerja 10 tahun = risiko tinggi
-  * Work-life balance dinilai baik mayoritas
+  * Pria memiliki attrition rate sedikit lebih tinggi (17.4%) dibandingkan wanita (16.2%).
+  * Karyawan dengan status lajang (Single) rentan resign dibandingkan yang sudah menikah atau bercerai.
+  * Tingkat pendidikan juga menjadi faktor, dengan lulusan Bachelor dan Master memiliki catatan kasus lebih banyak dibandingkan tingkat pendidikan yang lainnya. Hal ini juga bisa dipertimbangkan karena kebanyakan karyawan memiliki tingkat pendidikan S1 hingga S2.
+  * Kelompok usia kurang dari 30 tahun merupakan kelompok yang paling rentan untuk mengundurkan diri.
+  * Selain itu, dari hasil survei internal, karyawan dengan skor rendah pada work-life balance, job satisfaction, dan job involvement terutama yang mendapat skor 1 atau 2 memiliki kemungkinan besar untuk resign. 
 
 ![Dashboard Demografi](https://github.com/filzarahma/edutech-hr-attrition/blob/main/filzrahma-dashboard/Edutech%20HR%20Dashboard_page-0002.jpg)
 
